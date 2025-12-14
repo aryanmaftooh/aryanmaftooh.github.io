@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-image: url("construction.svg"); /* works with SVG */
+  background-image: url("construction.jpg"); /* works with SVG */
   background-size: cover;      /* fills screen */
   background-position: center; /* centers image */
   background-repeat: no-repeat;
