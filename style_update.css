@@ -5,8 +5,9 @@ html, body {
 }
 
 body {
-  background-image: url("construction.jpg"); /* works with SVG */
-  background-size: cover;      /* fills screen */
-  background-position: center; /* centers image */
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #000; /* fills empty space */
 }
