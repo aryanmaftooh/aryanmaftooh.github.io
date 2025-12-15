@@ -54,4 +54,16 @@ div#article-type{
 	text-align: left;
 }
 
+div#article-author{
+	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	text-align: left;
+}
+div#article-publised-date{
+	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	text-align: right;
+}
+	
+
 
