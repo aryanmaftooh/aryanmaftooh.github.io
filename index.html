@@ -3,6 +3,16 @@
 <head>
    <title>Aryan Maftooh</title>
    <link rel="stylesheet" href="style.css" type="text/css"/>
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: {'[+]': [['$', '$']]}
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 </head>
    <body>
@@ -37,9 +47,21 @@
                       </tbody>
                    </table>
                 </div>
-                 <p>
-                    The derivative is given by \( f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \)
-                 </p>
+                 <pre>I assume you know how to count the nunmber of possible
+                 subsets of set /(A/) with cardinality n.
+                 </pre>
+                 <div class="math-equation">
+                  \[
+                    \lvert B \rvert = \binom{n}{k}
+                 \]
+                 </div>
+                 <pre>B is the set containig subsets of A all with cardinality k</pre>
+                 <pre>One question arises, how to count the possible combinations which has repetitions
+                    in their arrangment? For example we have elements H and T and we want to count
+                    the number arrangement we can put these in three slots. we can blindly say that
+                    the count would be \(2^3\), but this is worng since the problem is not concerned with order.
+                 </pre>
+
                 
                  
               </td>
