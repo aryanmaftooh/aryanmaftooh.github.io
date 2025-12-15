@@ -11,3 +11,34 @@ padding-bottom: 1em;
     text-align: left;
     vertical-align: top;
 }
+
+#layout-content{
+	padding-top: 1.0em;
+	padding-left: 2.0em;
+	padding-right: 2.0em;
+	border: none;
+	background: #dbdbdd;
+	text-align: left;
+	vertical-align: top;
+	font-size: 1em;
+	
+}
+
+
+body{
+	background: silver;
+}
+#layout-menu a:hover{
+	text-decoration: none;
+}
+
+#layout-menu td {
+		background: #f4f4f4;
+		vertical-align: top;
+}
+
+div.menu-category{
+	border-bottom: 1px solid gray;
+	
+	
+}
