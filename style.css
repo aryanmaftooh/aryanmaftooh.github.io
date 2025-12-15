@@ -17,7 +17,7 @@ background: #a4c0f4; <!-- pink; #c4e3ed; ****  BACKGROUND FOR MENU-->
 	padding-left: 2.0em;
 	padding-right: 2.0em;
 	border: none;
-	background: silver;
+	background: ffffff;
 	text-align: left;
 	vertical-align: top;
 	font-size: 1em;
@@ -26,7 +26,7 @@ background: #a4c0f4; <!-- pink; #c4e3ed; ****  BACKGROUND FOR MENU-->
 
 
 body{
-	background: silver;
+	background: #ffffff;
 }
 #layout-menu a:hover{
 	text-decoration: none;
