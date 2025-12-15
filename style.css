@@ -45,7 +45,7 @@ div.menu-category{
 div#article-header{
 	background: silver;
 	margin-bottom: 0.2em;
-	border-style: dotted;
+	border-style: solid;
 	border-width: 2px;
 }
 div#article-type{
