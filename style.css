@@ -1,73 +1,60 @@
-
-
-
-
-#layout-menu{
-background: #a4c0f4; <!-- pink; #c4e3ed; ****  BACKGROUND FOR MENU-->
-	border: 0px solid #dddddd;
-	padding-top: 1em; 
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 0.95em; 
-	width: auto;
-	white-space: nowrap;
-	padding-bottom: 1em;
+#layout-menu {
+    background: #a4c0f4; /* pink; #c4e3ed; BACKGROUND FOR MENU */
+    border: 0px solid #dddddd;
+    padding: 1em 8px;
+    font-size: 0.95em;
+    width: auto;
+    white-space: nowrap;
     text-align: left;
     vertical-align: top;
 }
 
-#layout-content{
-	padding-top: 1.0em;
-	padding-left: 2.0em;
-	padding-right: 2.0em;
-	border: none;
-	background: ffffff;
-	text-align: left;
-	vertical-align: top;
-	font-size: 1em;
-	
+#layout-content {
+    padding: 1em 2em;
+    border: none;
+    background: #ffffff;
+    text-align: left;
+    vertical-align: top;
+    font-size: 1em;
 }
 
-
-body{
-	background: #ffffff;
+body {
+    background: #ffffff;
 }
-#layout-menu a:hover{
-	text-decoration: none;
+
+#layout-menu a:hover {
+    text-decoration: none;
 }
 
 #layout-menu td {
-		background: #f4f4f4;
-		vertical-align: top;
+    background: #f4f4f4;
+    vertical-align: top;
 }
 
-div.menu-category{
-	border-bottom: 1px solid gray;
-	
+div.menu-category {
+    border-bottom: 1px solid gray;
 }
 
-div#article-header{
-	background: silver;
-	margin-bottom: 0.2em;
-	border-style: solid;
-	border-width: 2px;
-}
-div#article-type{
-	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	text-align: left;
+div#article-header {
+    background: silver;
+    margin-bottom: 0.2em;
+    border: 2px solid;
 }
 
-div#article-author{
-	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
-	font-size: 10px;
-	text-align: left;
+div#article-type {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: left;
 }
-div#article-publised-date{
-	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
-	font-size: 10px;
-	text-align: right;
+
+div#article-author {
+    font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    text-align: left;
 }
-	
 
-
+div#article-published-date {
+    font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    text-align: right;
+}
