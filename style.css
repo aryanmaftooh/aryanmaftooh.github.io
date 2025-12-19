@@ -12,7 +12,7 @@ background: #a4c0f4; <!-- pink; #c4e3ed; ****  BACKGROUND FOR MENU-->
 	padding-top: 1em; 
 	padding-left: 8px;
 	padding-right: 8px;
-	font-size: 0.95em; 
+	font-size: auto; 
 	width: 20px;
 	white-space: nowrap;
 	padding-bottom: 1em;
@@ -28,7 +28,7 @@ background: #a4c0f4; <!-- pink; #c4e3ed; ****  BACKGROUND FOR MENU-->
 	background: ffffff;
 	text-align: left;
 	vertical-align: top;
-	font-size: 1em;
+	font-size: auto;
 	
 }
 
@@ -64,12 +64,12 @@ div#article-type{
 
 div#article-author{
 	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
-	font-size: 10px;
+	font-size: auto;
 	text-align: left;
 }
 div#article-publised-date{
 	font-family: Inter, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
-	font-size: 10px;
+	font-size: auto;
 	text-align: right;
 }
 	
