@@ -1,5 +1,5 @@
 #thetable{
-    width: 100%;
+    border-collapse: collapse;
 }
 
 #layout-menu {
