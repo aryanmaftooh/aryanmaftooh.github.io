@@ -1,7 +1,6 @@
 #thetable {
   width: 100%;
   table-layout: fixed; /* VERY IMPORTANT */
-  border-collapse: collapse;
 }
 
 
