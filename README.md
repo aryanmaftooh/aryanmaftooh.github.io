@@ -1,2 +1,2 @@
 # aryanmaftooh.github.io
-my webiste
+This is my personal webiste
