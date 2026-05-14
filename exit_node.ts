@@ -178,20 +178,47 @@ export default async function (req: Request): Promise<Response> {
 import http from "http";
 
 const server = http.createServer(async (req, res) => {
-  // Convert Node’s request to a standard Request
+  // Convert Node headers to Fetch API compatible headers
+  const fetchHeaders: Record<string, string> = {};
+  for (const [k, v] of Object.entries(req.headers)) {
+    if (!v) continue;
+    fetchHeaders[k] = Array.isArray(v) ? v.join(", ") : v;
+  }
+
+  // Read request body
+  const chunks: Uint8Array[] = [];
+  for await (const chunk of req) chunks.push(chunk);
+  const body = Buffer.concat(chunks).toString();
+
+  // Build a Fetch API Request
   const request = new Request(`http://localhost${req.url}`, {
     method: req.method,
-    headers: req.headers,
-    body: req.method === "POST" ? await streamToString(req) : undefined,
+    headers: fetchHeaders,
+    body: req.method === "POST" ? body : undefined,
   });
 
-  // Call the exit node function directly
-  const response = await exitNode(request);
+  try {
+    // Call your exitNode function
+    const response = await exitNode(request);
 
-  // Convert the Response object back to Node HTTP response
-  const json = await response.json();
-  res.writeHead(response.status, { "Content-Type": "application/json" });
-  res.end(JSON.stringify(json));
+    // Forward status
+    res.statusCode = response.status;
+
+    // Forward headers
+    response.headers.forEach((value, key) => {
+      if (key.toLowerCase() !== "content-length") res.setHeader(key, value);
+    });
+
+    // Forward body
+    const arrayBuffer = await response.arrayBuffer();
+    res.end(Buffer.from(arrayBuffer));
+  } catch (err) {
+    res.statusCode = 500;
+    res.setHeader("Content-Type", "text/plain");
+    res.end(err instanceof Error ? err.message : String(err));
+  }
 });
 
-server.listen(8000);
+server.listen(process.env.PORT || 8000, () =>
+  console.log(`Exit node running on port ${process.env.PORT || 8000}`)
+);
