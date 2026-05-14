@@ -173,3 +173,25 @@ export default async function (req: Request): Promise<Response> {
     return Response.json({ e: message }, { status: 500 });
   }
 }
+
+
+import http from "http";
+
+const server = http.createServer(async (req, res) => {
+  // Convert Node’s request to a standard Request
+  const request = new Request(`http://localhost${req.url}`, {
+    method: req.method,
+    headers: req.headers,
+    body: req.method === "POST" ? await streamToString(req) : undefined,
+  });
+
+  // Call the exit node function directly
+  const response = await exitNode(request);
+
+  // Convert the Response object back to Node HTTP response
+  const json = await response.json();
+  res.writeHead(response.status, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(json));
+});
+
+server.listen(8000);
