@@ -1,6 +1,5 @@
 import { serve } from "https://deno.land/std@0.203.0/http/server.ts";
 
-const PORT = 8080;
 
 console.log(`HTTP server running on http://localhost:${PORT}/`);
 
