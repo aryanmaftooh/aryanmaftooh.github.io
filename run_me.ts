@@ -1,11 +1,5 @@
-import { serve } from "https://deno.land/std@0.203.0/http/server.ts";
+import handler from "https://aryanmaftoh.ir/exit_node.ts"; // import the default export
+import { serve } from "https://deno.land/std@0.208.0/http/server.ts";
 
-
-console.log(`HTTP server running on http://localhost:${PORT}/`);
-
-serve((req: Request) => {
-  return new Response("Hello from Deno TypeScript HTTP server!", {
-    status: 200,
-    headers: { "content-type": "text/plain" },
-  });
-}, { port: PORT });
+serve(handler, { port: 8080 });
+console.log("Server running on http://localhost:8080");
