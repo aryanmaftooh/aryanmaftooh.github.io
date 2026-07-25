@@ -1,118 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <title>Aryan Maftooh</title>
-   <link rel="stylesheet" href="style.css" type="text/css"/>
-   <script>
-MathJax = {
-  tex: {
-    inlineMath: {'[+]': [['$', '$']]}
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
-</head>
-   <body>
-      <div>
-      <table summary="Table layout" id="thetable">
-         <tbody>
-           <tr>
-              <td id="layout-menu">
-                 <div class="menu-category">ARTICLES</div>
-                 <div class="menu-item"><a href="cwr.html" type="text/html">Combinations With Repetition</a></div>
-                 <div class="menu-category">HOBBIES</div>
-                 <div class="menu-item"><a href="/hobbies/photography/" type=index/html>phothography</a></div>
-                 <div class="menu-category">ABOUT ME</div>
-                 <div class="menu-item"><a href="/about-me/biography/" type="text/html">Biography</a></div>
-                 <div class="menu-item"><a href="/about-me/contact/" type="text/html">Contact</a></div>
-                 <div class="menu-item"><a href="about-me/socialmedia/">Social media</a></div>
-              </td>
-              <td id="layout-content">
-                <div id="article-header">
-                   <table>
-                      <tbody>
-                         <tr>
-                           <td>
-                           <div id="article-type">Combinations With Repetiton</div>
-                           </td>
-                            <sod>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                         </tr>
-                         <tr>
-                            <td><div id="article-author">Author: Aryan Maftooh</div></td>
-                            <td>&nbsp;&nbsp;</td>
-                            <td><div id="article-publish-date">15/12/2025</div></td>
-                         </tr>
-                      </tbody>
-                   </table>
-                </div>
-                 <p>
-                 I assume you know how to count the nunmber of possible
-                 subsets of set with cardinality n.
-                 </p>
-                 <div class="math-equation">
-                  \[
-                    \lvert B \rvert = \binom{n}{k}
-                 \]
-                 </div>
-                 <p>
-                    B is the set containig subsets of A all with cardinality k.
-                 </p>
-                 <p>
-                    One question arises, how to count the possible combinations which allow repetitions
-                    in their arrangment? For example we have elements H and T and we want to count
-                    the number arrangement we can put these in three slots. we can blindly say that
-                    the count would be $2^3$, but this would be worng since the problem is not concerned with order.
-                 </p>
-                 <p>
-                    This table shows the list of combinations of elements HT with repetition
-                 </p>
-                 <div>
-                    <table>
-                       <tbody>
-                          <tr>
-                             <td>TTH</td>
-                             <td>**|*</td>
-                          </tr>
-                          <tr>
-                             <td>TTT</td>
-                             <td>***|</td>
-                          </tr>
-                          <tr>
-                             <td>THH</td>
-                             <td>*|**</td>
-                          </tr>
-                          <tr>
-                             <td>HHH</td>
-                             <td>|***</td>
-                          </tr>
-                       </tbody>
-                    </table>
-                 </div>
-                 <p>To solve this problem, we use a weird looking seperator | and the elements on its left 
-                 represent the Tails and astricks on its right represnt Heads.
-                 We can say all the spots where seperator can seat is in the set A = {s1, s2, s3, s4} and saying this we have four spots
-                  to put only one seprator which means $\binom{4}{1}$ possible ways.
-                 </p>
-                 <p>The general fomula is:</p>
-                 <div class="math-equation">
-                    \[
-                    \binom{r+n-1}{n-1} = \binom{r+n-1}{r}
-                    \]
-                 </div>
-                 <p>r is number of slots, n number of distinct objects and n-1 number of sepreators.</p>
-                 
 
-                
-                 
-              </td>
-              
-           </tr>
-         </tbody>
-      </table>
-      </div>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Aryan Maftooh | Contact - Resume - Portfolio
+    </title>
+    <meta name="description" content="Personal website of Aryan Maftooh">
+    <meta name="author" content="Aryan Maftooh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/FAVICON/favicon.ico" sizes="any">
+    <link rel="icon" href="/FAVICON/favicon-32.png" type="image/png">
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
 
 </html>
