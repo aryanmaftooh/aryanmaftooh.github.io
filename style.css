@@ -61,7 +61,7 @@ h1 {
 }
 
 section {
-    height: 100vh;
+    height: calc(100vh - 80px);
     scroll-snap-align: start;
     scroll-margin-top: 80px;
     padding-right: 20%;
@@ -116,9 +116,7 @@ section {
 }
 
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+    50% { opacity: 0; }
 }
 
 .tagline {
@@ -175,8 +173,9 @@ section {
     stroke-width: 2;
     stroke-dasharray: 60 500;
     stroke-dashoffset: 0;
-    animation: travel 6s linear infinite;
-    filter: drop-shadow(0 0 4px rgb(221, 255, 247)) drop-shadow(0 0 10px rgb(221, 255, 247));
+    animation: travel 2s linear infinite;
+    filter: drop-shadow(0 0 4px rgb(221, 255, 247))
+            drop-shadow(0 0 10px rgb(221, 255, 247));
 }
 
 @keyframes travel {
