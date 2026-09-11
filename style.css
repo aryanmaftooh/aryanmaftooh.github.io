@@ -58,10 +58,11 @@ header nav ul li a.active {
 h1 {
     text-align: center;
     color: rgb(221, 255, 247);
+    margin-top: 10%;
 }
 
 section {
-    height: calc(100vh - 80px);
+    min-height: calc(100svh - 80px);
     scroll-snap-align: start;
     scroll-margin-top: 80px;
     padding-right: 20%;
@@ -116,7 +117,9 @@ section {
 }
 
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 .tagline {
@@ -174,8 +177,7 @@ section {
     stroke-dasharray: 60 500;
     stroke-dashoffset: 0;
     animation: travel 2s linear infinite;
-    filter: drop-shadow(0 0 4px rgb(221, 255, 247))
-            drop-shadow(0 0 10px rgb(221, 255, 247));
+    filter: drop-shadow(0 0 4px rgb(221, 255, 247)) drop-shadow(0 0 10px rgb(221, 255, 247));
 }
 
 @keyframes travel {
