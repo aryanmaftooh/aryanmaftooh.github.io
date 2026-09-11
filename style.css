@@ -58,13 +58,13 @@ header nav ul li a.active {
 h1 {
     text-align: center;
     color: rgb(221, 255, 247);
-    margin-top: 10%;
+    scroll-margin-top: 10px;
 }
 
 section {
-    min-height: calc(100svh - 80px);
+    min-height: calc(100vh - 80px);
     scroll-snap-align: start;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
     padding-right: 20%;
     padding-left: 20%;
     display: flex;
